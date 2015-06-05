@@ -1,0 +1,118 @@
+/* common styling */
+html,
+body,
+head,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure { margin: 0px; padding: 0px; }
+body { font-family: Arial; line-height: 24px; font-size: 14px; }
+table { border-spacing: 0px; }
+
+.landing-page-outer-container { max-width: 700px; margin: 0 auto; }
+.holder { margin-bottom: 30px; margin-top: 20px; }
+.holder img { max-width: 100%; box-shadow: 6px 6px 6px #888888; text-align: center; }
+.landing-page-promo-container { padding: 15px; margin-top: 10px; }
+.promotion-title { font-size: 24px; font-weight: bold; color: #036dbe; text-decoration: none; margin-bottom: 5px; }
+.summary-drawing-date { font-size: 14px; color: #444444; margin:10px 0 }
+.landing-page-inner-container { margin-bottom: 40px; }
+.next-entry-deadline { font-size: 24px; font-weight: bold; color: #b20000; }
+#promo0 { margin-bottom: 50px; }
+.details h1 { padding: 10px 0; font-size: 18px; color: #000; font-weight: bold; text-align: center; width: 100%; }
+.content_area a { margin-top: 10px; display: block; }
+.details p { font-size: 14px; color: #444444; line-height: 24px; }
+.entry_summary { padding: 4px 0; text-align: center !important; }
+.promo_drawing_date { font-weight: bold; margin-bottom: 15px; }
+
+/*images  */
+.millionaire-madness,
+.money-money,
+.fortune { max-width: 100%; background-repeat: no-repeat; box-shadow: 6px 6px 6px #888888; }
+#promotion_container_details { margin-top: 20px 0; }
+.jsgrid-table th { background-color: #666666; color: #FFF; line-height: 24px; border: 3px solid #FFFFFF; border-top: none; }
+.jsgrid-table { width: 100%; table-layout: fixed; border-collapse: collapse; border-spacing: 0; }
+.jsgrid-table td { padding: 0.5em 0.5em; font-size: 14px; }
+.jsgrid-table td,
+.jsgrid-table th { box-sizing: border-box; }
+.jsgrid-table td { background-color: #cccccc; color: #444444; line-height: 24px; border: 3px solid #FFFFFF; border-top: none; }
+.jsgrid-header-row > th { padding: .5em .5em; font-weight: bold; font-size: 14px; }
+.promotion-wide .promotion-title { color: #000000; }
+
+/*.next-entry-deadline { display: none;}*/
+.header-position { }
+.jsgrid-align-center { text-align: center; }
+.promotion-wide .promotion-title { color: #000000; }
+.drawview { background-color: #e2e2e2; width: 100%; }
+.drawview tr { border-bottom: 1px solid gray; border-left-style: groove; }
+.entryhead { font-weight: bold; }
+.h1drawhead { padding: 10px 0; font-size: 18px; color: #000; font-weight: bold; }
+.madness_entryinfo { padding: 10px 0; }
+
+/* Back Button */
+.back,.back:active,.back:hover,.back:visited { float: right; font-family: arial; font-size: 15px; margin: 10px 0px; text-decoration: none; color: #036dbe; margin-right: 04px; }
+/* table */
+.promotion-table td:before { content: attr(data-th)":"; ont-weight: bold; display: inline-block; }
+.promotion-table { font-size: 14px; overflow: hidden; min-width: 100%; background-color: :#fff; border-top: none; }
+.promotion-table tr { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.promotion-table th { background-color: #666666; color: #FFF; line-height: 24px;border-left: 2px solid #fff;  border-bottom: 2px solid #fff;}
+.promotion-table td { background: #ccc; color: #444444; border-left: 2px solid #fff;    border-bottom: 2px solid #fff; }
+.promotion-table td:before { content: attr(data-th)":"; font-weight: bold; display: inline-block; }
+#promotion_container{padding:25px 15px 0px 15px}
+/* common styling */
+
+/*Promotion view layout (less than 480px viewport)*/
+
+@media screen and (max-width:480px) {
+	body.bg { background-color: #FFF !important; }
+	.jsgrid-align-center { text-align: left;  }
+	.h1drawhead { text-align: center; }
+	.border_gray { border-bottom: 1px solid #bbb }
+	.next-entry-deadline { }
+	.promotion-less { display: block }
+	#drawingdate-above480 { display: none }
+	.next-entry-deadline { display: block; text-align: center; font-size: 24px; clear: both; }
+	.border_white { border-bottom: 1px solid #f7f7f7 !important }
+	.promotion-table table2 td{border-bottom:1px solid red !important;}
+	.promotion-table { font-size: 14px; overflow: hidden; min-width: 100%; background-color: :#fff; border-top: none; }
+	.promotion-table tr { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+	.promotion-table th { display: none; background-color: #666666; color: #FFF; line-height: 24px; border-top: none; border:none; }
+	.promotion-table td { display: block; background: #ccc; color: #444444; border: 1px solid #fff; padding-left: 4px;  }
+	.promotion-table td:before { content: attr(data-th)":"; font-weight: bold; display: inline-block; width:150px; margin-right: 10px;}
+	.promotion-table td{border:none}
+	.jsgrid-row td{border-bottom:1px solid #f9f9f9; padding:8px 0px 8px 10px}
+	.jsgrid-row td:last-child{border-bottom:1px solid #bbb !important}
+	.entry_summary { color: #b20000 !important; text-align: center !important; margin-bottom: 20px }
+	.entryhead { width: 40%; padding: 8px 2px; font-size: 14px; text-align: left; vertical-align: top; font-weight: bold; }
+	.drawhead { width: 60%; padding: 8px 2px; font-size: 14px; text-align: left; vertical-align: top; }
+	#draw-containter { margin-top: 6px; }
+		#promotion_container_details .promotion-title{color:#000; margin:20px 0 10px 0}
+}
+
+/* Promotion view layout (greater than 480px viewport) */
+@media screen and (min-width:481px) {
+.bg { background: #cccccc; background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #ffffff)); background: -webkit-linear-gradient(top, #cccccc 0%, #ffffff 100%); background: -o-linear-gradient(top, #cccccc 0%, #ffffff 100%); background: -ms-linear-gradient(top, #cccccc 0%, #ffffff 100%); background: linear-gradient(to bottom, #cccccc 0%, #ffffff 100%); background-repeat: no-repeat; padding: 10px; }
+	.header-position { display: none; }
+	.jsgrid-align-center { text-align: center !important }
+	.promotion_name.promotion-title { color: #000; margin-top: 10px; }
+	.promotion-less { display: none }
+	.promotion-table td:before { display: none; }
+	.promotion-table th,.promotion-table td { display: table-cell; }
+	.promotion-table th:first-child,.promotion-table td:first-child { padding-left: 0; }
+	.promotion-table th:last-child,.promotion-table td:last-child { padding-right: 0; }
+	.promotion-table th,.promotion-table td { padding: 6px; text-align: center; }
+	.details .promotion-title { color: #000; }
+	
+	#draw-containter { margin-top: 10px; }
+
+/*.header-position { display:none;}*/ }
+
+/* Promotion view layout (greater than 480px viewport) */
+.displayNone { display: none; }
+.displayBlock { display: block; }

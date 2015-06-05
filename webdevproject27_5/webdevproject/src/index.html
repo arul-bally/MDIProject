@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Second-Chance Promotion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="main-container">
+	<!--  Index Page -->
+	<div class="landing-page-outer-container">
+		<div id="promotion_container">
+			<!-- Promotion-->
+			<div id="promo-division" class="landing-page-promo-container hidden-container">
+				<figure>
+				<img src="../images/mmadness.jpg" class="promo-image" alt="" title=""/>
+				</figure>
+				<div class="content_area">
+					<a href="index.html?promo=promo01" id="Index_promoTitle" class="promotion-title"></a>
+					<p class="summary summary-drawing-date" id="Index_promoInfo">
+					</p>
+					<div class="promo_drawing_date">
+						<span id="drawing-date" class="summary-drawing-date">Next Drawing Date: </span>
+						<span id="drawing-date-value" class="summary-drawing-date"></span>
+					</div>
+				</div>
+			</div>
+			<!-- Promotion -->
+		</div>
+	</div>
+</div>
+<!--  Index Page -->
+<!--  Inner Page -->
+<div id='promotion_details_container' class="main-inner_container">
+	<div class="landing-page-outer-container">
+		<a class="return_state button back visible-container" href="./index.html" id="home">&#60; Back</a>
+		<div class="header-position">
+			<h1 id="title" class="next-entry-deadline visible-container">The Next Entry Deadline is <span class='deadlineDate'></span></h1>
+		</div>
+		<div class="landing-page-promo-container holder">
+			<figure>
+			<img src="images/mmadness.jpg" class="millionaire-madness" alt="">
+			</figure>
+			<div id="promotion_container_details">
+				<div class="promotion_name promotion-title" id="Inner_PromoTitle">
+				</div>
+				<p class="summary summary-drawing-date" id="Inner_PromoInfo">
+				</p>
+				<h1 class="promo-info-align-center draw-heading">Drawing Schedule</h1>
+				<table class="promotion-table" id="listTable1">
+				<tbody>
+				<tr class="promo-info-header-row">
+					<th class="width100">
+						 PRIZE
+					</th>
+					<th class="width100">
+						 ENTRY DEADLINE
+					</th>
+					<th class="width100">
+						 DRAWING DATE
+					</th>
+				</tr>
+				<tr class="promo-info-row">
+					<td class="promo-info-align-center" data-th="PRIZE">
+						<span></span>
+					</td>
+					<td class="promo-info-align-center" data-th="ENTRY DEADLINE">
+						<span></span>
+					</td>
+					<td class="promo-info-align-center" data-th="DRAWING DATE">
+						<span></span>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+				<p class="entryinfo" id="EntryDetails">
+				</p>
+				<h1 class="promo-info-align-center draw-heading">Your Total Tickets Entered: <span class='totalTicketsEntered' id="EntryTicket"></span></h1>
+				<p class="promo-info-align-center entry_summary">
+					 All entries are locked in at the time they are submitted and cannot be deleted
+				</p>
+				<table class="promotion-table" id="listTable2">
+				<tbody>
+				<tr class="promo-info-header-row">
+					<th class="width40">
+						 ENTRY NUMBER
+					</th>
+					<th class="width60">
+						 DATE
+					</th>
+				</tr>
+				<tr class="promo-info-row">
+					<td class="promo-info-align-center" data-th="ENTRY NUMBER">
+						<span></span>
+					</td>
+					<td class="promo-info-align-center" data-th="DATE">
+						<span></span>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  Inner Page -->
+<!-- script files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/webdevproject-data.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
