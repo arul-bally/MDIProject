@@ -41,13 +41,14 @@ $(document).ready(function(){
 			useradd_inprogress = true;
 			$("table tbody").append(
 				"<tr>"+
-				"<td><input type='text' placeholder='Name' value='' /></td>"+
+				"<td><input type='text' placeholder='Name' value=''/></td>"+
 				"<td><input type='text' placeholder='Phone Ex(123-456-7890)' value='' /></td>"+
 				"<td><input type='text' placeholder='Title' value='' /></td>"+
 				"<td><input type='text' placeholder='Office Ex(123-456-7890)' value='' /></td>"+
 				"<td><img src='images/Save.png' class='btnSave' alt='Save' title='Save'><img src='images/Delete.png' class='btnDelete' alt='Delete' title='Delete'/></td>"+
 				"</tr>");
 
+			$("table tbody").find('input:first').focus();
 			$(".btnSave").bind("click", Save);		
 			$(".btnDelete").bind("click", Delete);
 		}
@@ -61,6 +62,7 @@ $(document).ready(function(){
 
 		if(useradd_inprogress==false)
 		{
+			useradd_inprogress = true;
 			var par = $(this).parent().parent(); 
 			var tdName = par.children("td:nth-child(1)");
 			var tdTelephone = par.children("td:nth-child(2)");
@@ -174,7 +176,7 @@ $(document).ready(function(){
 		var tableRow = $(this).closest('tr');
 		var index = parseInt($(tableRow).index())-1;
 		$(tableRow).remove();
-
+		console.log(index);
 		if(index >= 0) {
 			var allUsers = JSON.parse(sessionStorage.getItem('userObj'));
 			
@@ -185,6 +187,9 @@ $(document).ready(function(){
 
 			sessionStorage.setItem('userObj', JSON.stringify(allUsers));
 		}
+
+		useradd_inprogress = false;	
+
 	};
 	
 	list();
